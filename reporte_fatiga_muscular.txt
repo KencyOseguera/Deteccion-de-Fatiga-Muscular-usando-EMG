@@ -1,0 +1,33 @@
+Reporte de Análisis de Fatiga Muscular
+
+Este reporte analiza el nivel de fatiga muscular a través de señales EMG utilizando un modelo de clasificación de Bosque Aleatorio (Random Forest). Se evalúan dos características por canal de señal: RMS (Root Mean Square) y MDF (Mediana de la Frecuencia).
+
+Metodología
+1. Se calculan las características RMS y MDF para cada ventana de 1 segundo de los datos EMG.
+2. Las ventanas se etiquetan según la presencia o ausencia de fatiga muscular.
+3. Se entrena un modelo de Arbol Aleatorio y se evalúa su precisión, exhaustividad y puntuación F1 en el conjunto de prueba.
+
+Resultados
+Las métricas de clasificación son las siguientes:
+- Precisión (Fatiga): 1.00
+- Exhaustividad (Fatiga): 0.75
+- Puntuación F1 (Fatiga): 0.86
+
+Interpretación de Resultados
+La precisión refleja la cantidad de verdaderos positivos respecto a todas las predicciones de fatiga, mientras que la exhaustividad indica la proporción de verdaderos positivos respecto a todos los casos reales de fatiga. La puntuación F1 es una combinación equilibrada de ambas.
+
+Informe General
+Exactitud del modelo: 0.90
+Promedio macro de precisión: 0.93
+Promedio macro de exhaustividad: 0.88
+Promedio macro de puntuación F1: 0.89
+Promedio ponderado de precisión: 0.91
+Promedio ponderado de exhaustividad: 0.90
+Promedio ponderado de puntuación F1: 0.90
+
+Matriz de Confusión:
+[[6 0]
+ [1 3]]
+
+Esta matriz permite observar los aciertos y errores del modelo al clasificar la fatiga muscular.
+
