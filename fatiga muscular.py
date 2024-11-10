@@ -137,8 +137,8 @@ plt.savefig("metricas_clasificacion.png", dpi=300, bbox_inches='tight')  # Guard
 # Reorganización de las etiquetas de los ejes
 plt.figure(figsize=(8, 6))
 sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', cbar=False, 
-            xticklabels=["Fatiga", "No Fatiga"], 
-            yticklabels=["Fatiga", "No Fatiga"])
+            xticklabels=["No Fatiga", "Fatiga"], 
+            yticklabels=["No Fatiga", "Fatiga"])
 
 # Ajustes de los ejes y título
 plt.xlabel('Predicción')
